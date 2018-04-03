@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/tianqiapp.css">
+	<script src="js/rem.js"></script><!-- 引入js -->
+	<link rel="icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+	<div class="qian123">
+		<!-- 当前信息 -->
+		<section id="now">
+			<!-- 当前城市 -->
+			<h1 class="now_weizhi">
+				<span class="now_weizhi_icon"></span>
+				<span class="now_weizhi_name"></span>
+				<div class="rrr">搜索</div>
+			</h1>
+			<!-- 空气质量 -->
+			<div class="now_kongqi">
+				<p>空气</p>
+				<ul></ul>
+			</div>
+			<!-- 当前温度 -->
+			<h1 class="now_wendu">
+				<span></span>°
+			</h1>
+			<!-- 当前天气 -->
+			<h3 class="now_tianqi"></h3>
+			<!-- 当前风度 -->
+			<div class="now_feng">
+				<span class="now_fengxiang"></span>
+				<span class="fengji"></span>级
+			</div>
+
+			<p class="tishi">天气寒冷，注意保暖~</p>
+		</section>
+
+		<!-- 未来两天之内的信息 -->
+		<section id="weilai">
+			<div class="weilai_box jintian">
+				<div class="weilai_top">
+					<span class="weilai_top_jintian">今天</span>
+					<p><span class="weilai_top_zuigao"></span>/<span class="weilai_top_zuidi"></span>°C</p>
+				</div>
+				<div class="weilai_top">
+					<span class="weilai_jintian_tianqi"></span>
+					<div class="weilai_jintian_img" id="jintian123">
+						<!--<img src="img/0.png" alt="">-->
+					</div>
+				</div>
+			</div>
+			<div class="weilai_box mingtian">
+				<div class="weilai_top">
+					<span class="weilai_top_jintian">明天</span>
+					<p><span class="weilai_top_zuigao mingtian_top_zuigao"></span>/<span class="weilai_top_zuidi1"></span>°C</p>
+				</div>
+				<div class="weilai_top">
+					<span class="weilai_mingtian_tianqi" id="tianqi"></span>
+					<div class="weilai_mingtian_img" id="mingtian123">
+						<!--<img src="img/0.png" alt="">-->
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+		<!--&lt;!&ndash; 未来两天的天气 &ndash;&gt;-->
+		<!--<section id="furture">-->
+
+		<!--</section>-->
+		<!-- 未来24小时 -->
+		<ul id="hours">
+
+		</ul>
+		<!-- 未来一星期天气 -->
+		<ul id="yixingqi">
+
+
+		</ul>
+	</div>
+
+		<!-- 城市 -->
+		<div id="citys">
+			<header>
+				<input type="text" class="sousuokuang" placeholder="请输入搜索内容">
+				<h2 class="citys_btn">搜索</h2>
+			</header>
+			<div class="citys_xia_1">
+				<div><h1>城市</h1></div>
+				<ul class="citys_chengshiming">
+
+
+				</ul>
+			</div>
+
+			<!--<div class="citys_xia_1">-->
+				<!--<div><h1>热门城市</h1></div>-->
+				<!--<ul class="citys_chengshiming">-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+				<!--</ul>-->
+			<!--</div>-->
+
+			<!--<div class="citys_xia_1">-->
+				<!--<div><h1>热门城市</h1></div>-->
+				<!--<ul class="citys_chengshiming">-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<div>太原</div>-->
+					<!--</li>-->
+
+				<!--</ul>-->
+			<!--</div>-->
+		</div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+
+        function getcity() {
+            var data=[];
+            var province=[];
+            var city=[];
+            $.ajax({
+                url:"http://api.jisuapi.com/weather/city?appkey=96f5cca7251bb7d6",
+                dataType:"jsonp",
+                success:function (r) {
+                    data=r.result;
+                    province=$.grep(data,function (val,index) {
+                        if(val.parentid==="0"){
+                            return true;
+                        }
+                    })
+                    let str="";
+                    $.each(province,function (index,val) {
+                        str+=`<li id="${val.cityid}"><div>${val.city}</div></li>`
+                    })
+                    $(".citys_chengshiming").html(str);
+                }
+            })
+            $(".citys_chengshiming").on("click","li",function () {
+                var id=$(this).attr("id");
+                city=$.grep(data,function (val,index) {
+                    if(val.parentid===id){
+                        return true;
+                    }
+                })
+                $(".citys_chengshiming").empty();
+                let str="";
+                $.each(city,function (index,val) {
+                    str+=`<li><div  id="city">${val.city}</div></li>`
+                })
+                $(".citys_chengshiming").html(str);
+            })
+            $(".citys_chengshiming").on("click","#city",function () {
+                $("#citys").hide();
+				$(".qian123").show();
+                getweather($(this).html())
+
+
+
+
+
+
+            })
+        }
+		getcity();
+        function getweather(city1) {
+
+            $.ajax({
+                url:"http://api.jisuapi.com/weather/query?appkey=96f5cca7251bb7d6&city="+city1,
+                dataType:"jsonp",
+                success:function (r) {
+                    console.log(r)
+                    var data=r.result.daily;
+                    var kongqi=r.result.aqi;
+                    var data0=data[0];
+                    var data1=data[1];
+
+                    var imgg=data0.day.img;
+                    var imgg1=data1.day.img;
+//                    console.log(kongqi)
+//                    console.log(data1.day.weather)
+                    $(".now_kongqi ul").html(kongqi.quality);
+                    $(".now_weizhi_name").html(city1);
+					strr=`<img src="img/tianqitubiao/weathercn02/${imgg}.png" alt="">`;
+					$("#jintian123").html(strr);
+                    strrr=`<img src="img/tianqitubiao/weathercn02/${imgg1}.png" alt="">`;
+                    $("#mingtian123").html(strr);
+
+                    $(".weilai_top_zuigao").html(data0.day.temphigh);
+                    $(".weilai_top_zuidi").html(data0.night.templow);
+                    $(".mingtian_top_zuigao").html(data1.day.temphigh);
+                    $(".weilai_top_zuidi1").html(data1.night.templow);
+                    $(".weilai_jintian_tianqi").html(data0.day.weather);
+                    $("#tianqi").html(data1.day.weather);
+                    $(".now_tianqi").html(data0.day.weather);
+                    $(".now_fengxiang").html(data0.day.winddirect);
+                    $(".fengji").html(data0.day.windpower);
+                    $(".now_wendu span").html(data0.day.temphigh);
+
+
+                    var hour=r.result.hourly;
+                    var str="";
+                    $.each(hour,function (index,val) {
+                        str+=`<li>
+				<h1 class="hours_times">${val.time}</h1>
+				<div class="hours_img">
+					<img src="img/tianqitubiao/weathercn02/${val.img}.png" alt="">
+				</div>
+				<h2 class="hours_wendu"><span>${val.temp}</span>°</h2>
+			</li>`
+                    })
+                    $("#hours").html(str)
+
+
+                    var str1="";
+                    $.each(data,function (index,val) {
+                        var datee=val.date.slice(5);
+//                        console.log(datee)
+                        str1+=`<li>
+				<h2 class="yixingqi_riqi"><span>${datee}</span></h2>
+				<h2 class="yixingqi_tianqi"><span>${val.day.weather}</span></h2>
+				<div class="yixingqi_img">
+					<img src="img/tianqitubiao/weathercn02/${val.day.img}.png" alt="">
+				</div>
+				<div>
+					<h2 class="yixingqi_zuigao"><span>${val.day.temphigh}</span></h2>
+				</div>
+				<div>
+					<h2 class="yixingqi_zuidi"><span>${val.night.templow}</span></h2>
+				</div>
+				<h2 class="yixingqi_fengxiang"><span>${val.day.winddirect}</span></h2>
+				<div>
+					<h2 class="yixingqi_fengji"><span>${val.day.windpower}</span></h2>
+				</div>
+			</li>`;
+                    })
+                    $("#yixingqi").html(str1);
+
+                }
+
+
+            })
+        }
+
+		$(".rrr").click(function () {
+		    getcity();
+			$(".qian123").hide();
+			$("#citys").show();
+        })
+
+
+	</script>
+</body>
+</html>
